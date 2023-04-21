@@ -1,4 +1,10 @@
 export interface Game {
+  details: GameDetails;
+  screenshots: Array<Screenshot>;
+  trailers: Array<Trailers>;
+}
+
+export interface GameDetails {
   id: string;
   background_image: string;
   name: string;
@@ -11,10 +17,7 @@ export interface Game {
   parent_platforms: Array<ParentPlatform>;
   publishers: Array<Publishers>;
   ratings: Array<Rating>;
-  screenshots: Array<Screenshot>;
-  trailers: Array<Trailers>;
 }
-
 export interface APIResponse<T> {
   results: Array<T>;
 }

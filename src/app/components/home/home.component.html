@@ -21,7 +21,7 @@
     <div (click)="openGameDetails(game.id)" class="game">
       <div class="game-thumb-container">
         <img
-          *ngIf="game.background_image"
+          *ngIf="game?.background_image"
           alt="{{ game.name }}"
           class="game-thumbnail"
           height="150"
